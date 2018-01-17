@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CryptoHue</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+
+    <h1>CryptoHue</h1>
+
+    <h4>24hr Change: <span id="portfolioChange">0.00%</span></h4>
+
+    <h5>Blockfolio Token</h5><input type="text" id="blockfolio_token" placeholder="c491..."><br>
+    <h5>Hue Bridge IP</h5><input type="text" id="hue_ip" placeholder="192.168.000.000"><br>
+
+    <button id="submit">Save Settings</button><br>
+
+    <div id="connectArea">
+        <button id="connect">Connect to Hue Bridge</button>
+        <p id="connectStatus">Not connected to Hue Bridge</p>
+    </div><br>
+
+    <button id="start">Start</button>
+    <button id="stop" disabled>Stop</button>
+
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        require('./renderer.js')
+    </script>
+</body>
+
+</html>

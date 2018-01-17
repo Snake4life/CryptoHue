@@ -1,0 +1,27 @@
+{
+    "name": "CryptoHue",
+    "version": "1.0.0",
+    "description": "Adjust Hue lights to reflect cryptocurrency portfolio change",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "keywords": [
+        "Cryptocurreny",
+        "Hue"
+    ],
+    "author": "Nick Mattiacci <i@nickmattiacci.com>",
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^2.3.0",
+        "fs": "0.0.1-security",
+        "jquery": "^3.2.1",
+        "moment": "^2.20.1",
+        "request": "^2.83.0",
+        "util": "^0.10.3"
+    },
+    "devDependencies": {
+        "electron": "^1.7.10",
+        "electron-packager": "^10.1.1"
+    }
+}

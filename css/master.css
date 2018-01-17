@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Eurostile;
+    src: local("Eurostile"), url(./fonts/eurostileregular.ttf);
+}
+
+html, body {
+    -webkit-app-region: drag;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Eurostile, 'Roboto', sans-serif;
+}
+
+h1 {
+    margin: 30px 0 20px;
+}
+
+div#connectArea {
+    height: 75px;
+}
+
+input {
+    text-align: center;
+    margin: 10px 0;
+}
+
+h4 {
+    margin: 20px 0;
+}
+
+h5 {
+    margin: 0;
+}
+
+button {
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    font-size: 10pt;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
+
+button:disabled {
+    color: grey;
+    border-color: grey;
+    background-color: black;
+}
+
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
